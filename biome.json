@@ -1,6 +1,7 @@
 {
 	"formatter": {
 		"ignore": [
+			".vscode/**",
 			"website/**",
 			"packages/*/dist/**",
 			"package.json",
