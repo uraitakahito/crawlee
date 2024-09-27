@@ -1,0 +1,23 @@
+{
+    "name": "examples",
+    "version": "1.0.0",
+    "description": "",
+    "engines": {
+        "node": ">=16.0.0"
+    },
+    "type": "module",
+    "keywords": [],
+    "license": "Apache-2.0",
+    "scripts": {
+        "build": "yarn clean && yarn compile && yarn copy",
+        "clean": "rimraf ./dist",
+        "compile": "tsc -p tsconfig.build.json",
+        "copy": "tsx ../scripts/copy.ts"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "dependencies": {
+        "crawlee": "workspace:^"
+    }
+}

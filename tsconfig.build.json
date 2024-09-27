@@ -11,6 +11,6 @@
 		"module": "Node16",
 		"moduleResolution": "Node16"
 	},
-	"include": ["./packages/*/src/**/*"],
+	"include": ["./packages/*/src/**/*", "./examples/*/src/**/*"],
 	"exclude": ["**/node_modules", "**/dist"]
 }
