@@ -4355,7 +4355,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"crawlee@workspace:packages/crawlee":
+"crawlee@workspace:^, crawlee@workspace:packages/crawlee":
   version: 0.0.0-use.local
   resolution: "crawlee@workspace:packages/crawlee"
   dependencies:
@@ -5776,6 +5776,14 @@ __metadata:
   checksum: 10c0/4ba5c00c506e6c786b4d6262cfbce90ddc14c10d4667e5c83ae993c9de88aa856033994dd2b35b83e8dc1170e224e66a319fa80adc4c32adcd2379bbc75da814
   languageName: node
   linkType: hard
+
+"examples@workspace:examples":
+  version: 0.0.0-use.local
+  resolution: "examples@workspace:examples"
+  dependencies:
+    crawlee: "workspace:^"
+  languageName: unknown
+  linkType: soft
 
 "execa@npm:5.0.0":
   version: 5.0.0
