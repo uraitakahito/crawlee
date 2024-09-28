@@ -12,7 +12,6 @@ coverage
 logs
 pids
 .idea
-.vscode
 package-lock.json
 tmp
 jsconfig.json
