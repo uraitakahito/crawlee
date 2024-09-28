@@ -7,5 +7,13 @@ const crawler = new CheerioCrawler({
     }
 })
 
-await crawler.run(['https://crawlee.dev']);
+async function main() {
+  try {
+    const res = await crawler.run(['https://crawlee.dev']);
+    console.log("Main function response:", res);
+  } catch (error) {
+    console.error("Error in main function response:", error);
+  }
+}
 
+main();
