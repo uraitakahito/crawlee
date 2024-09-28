@@ -1,0 +1,30 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run selected TypeScript file",
+      // program - an absolute path to the Node.js program to debug.
+      "program": "${file}",
+      "preLaunchTask": "Compile TypeScript",
+      // "outFiles": ["${workspaceFolder}/examples/dist/*.js", "${workspaceFolder}/packages/dist/**/*.js"],
+      "outFiles": ["${workspaceFolder}/**/*.js"],
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Test selected TypeScript file",
+      // program - an absolute path to the Node.js program to debug.
+      "program": "${workspaceRoot}/node_modules/vitest/vitest.mjs",
+      "autoAttachChildProcesses": true,
+      "skipFiles": ["<node_internals>/**", "**/node_modules/**"],
+      "args": ["run", "${relativeFile}"],
+      "smartStep": true,
+      "console": "integratedTerminal"
+    }
+  ]
+}
