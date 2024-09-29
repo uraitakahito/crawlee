@@ -10,7 +10,13 @@
 		"project": "./tsconfig.eslint.json",
 		"ecmaVersion": 2022
 	},
-	"ignorePatterns": ["node_modules", "dist", "coverage", "**/*.d.ts", "examples"],
+	"ignorePatterns": [
+		"node_modules",
+		"dist",
+		"coverage",
+		"**/*.d.ts",
+		"examples"
+	],
 	"overrides": [
 		{
 			"plugins": ["@typescript-eslint"],
