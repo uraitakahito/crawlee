@@ -113,7 +113,7 @@
         "turbo": "^2.1.0",
         "typescript": "^5.6.2",
         "vite-tsconfig-paths": "^4.3.2",
-        "vitest": "^2.0.0"
+        "vitest": "^3.2.6"
     },
     "packageManager": "yarn@4.5.0",
     "volta": {
